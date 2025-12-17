@@ -10,3 +10,14 @@
     <p>Stay tuned—Bolt’s emotional journey begins here!</p>
 </body>
 </html>
+<img id="bolt" src="your-image-file.jpg" alt="Bolt in Chair" style="opacity: 0; width: 100%; max-width: 600px;">
+
+<script>
+  window.onload = function() {
+    const boltImage = document.getElementById('bolt');
+    setTimeout(() => {
+      boltImage.style.transition = 'opacity 2s';
+      boltImage.style.opacity = 1;
+    }, 1000); // starts fade after 1 second
+  };
+</script>
